@@ -18,7 +18,10 @@ IMPORANT BUILD STEPS
 ---------
 * make sure you install Apache Maven 3.1.1 (0728685237757ffbf44136acec0402957f723d9a; 2013-09-17 08:22:22-0700)
 * For build run the following command that disables findbugs and javadocs (needed to build):
-** mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true -Dfindbugs.skip=true -Dcheckstyle.skip=true -Dpmd.skip=true -Dandroid.generateApk=false -Dmaven.javadoc.skip=true verify
+
+```
+mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true -Dfindbugs.skip=true -Dcheckstyle.skip=true -Dpmd.skip=true -Dandroid.generateApk=false -Dmaven.javadoc.skip=true verify
+```
 
 More info:
 http://stackoverflow.com/questions/23542876/unable-to-build-maven-project-due-to-javadoc-error
